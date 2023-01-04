@@ -10,7 +10,7 @@ public class FirstJUTest {
 @BeforeAll
 static void beforeAll() {
     Configuration.browser = FIREFOX;
-    System.out.println("all");
+    System.out.println("before all");
 }
     @AfterAll
     static void afterAll() {
