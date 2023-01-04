@@ -21,18 +21,18 @@ static void beforeAll() {
     @BeforeEach
     void beforeEach() {
 
-        System.out.println("dsfsdfsdfdsf");
+        System.out.println("222sdfdsf");
     }
     @AfterEach
     void afterEach() {
 
-        System.out.println("sdfdsfgfdgdfg");
+        System.out.println("sd222gdfg");
 
     }
 
     @Test
     void firstTest() {
-        System.out.println("gfhfg");
+        System.out.println("gf333hfg");
 
     }
     @Test
