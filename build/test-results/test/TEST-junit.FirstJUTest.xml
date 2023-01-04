@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="junit.FirstJUTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-04T11:35:01" hostname="DESKTOP-T1L377U" time="0.02">
+  <properties/>
+  <testcase name="firstTest()" classname="junit.FirstJUTest" time="0.018"/>
+  <testcase name="secondTest()" classname="junit.FirstJUTest" time="0.002"/>
+  <system-out><![CDATA[all
+dsfsdfsdfdsf
+gfhfg
+sdfdsfgfdgdfg
+dsfsdfsdfdsf
+gfeeeehfg
+sdfdsfgfdgdfg
+after all
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
