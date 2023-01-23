@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -20,17 +21,19 @@ public class TestBox {
 
     @Test
     void fillFormTest() {
+        String userName = "Alex Steel";
 
-        open("/text-box");
-        $(".main-header").shouldHave(text("Text Box"));
+        new RegistrationPage().openPage();
+        new RegistrationPage().setFirstName(userName);
+        new RegistrationPage().setEmail();
 
-        $("#userName").setValue("Alex Steel");
-        $("#userEmail").setValue("test@mail.com");
+
+
         $("#currentAddress").setValue("street street");
         $("#permanentAddress").setValue("test text");
         $("#submit").click();
         $("#output").shouldBe(visible);
-        $("#output").$("#name").shouldHave((text("Alex Steel")));
+        $("#output").$("#name").shouldHave((text(userName)));
         $("#output #email").shouldHave((text("test@mail.com")));
         $("#output #currentAddress").shouldHave((text("street street")));
         $("#output #permanentAddress").shouldHave((text("test text")));
